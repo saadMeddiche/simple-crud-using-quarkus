@@ -1,0 +1,29 @@
+# --- Quarkus & Maven Build ---
+target/
+.quarkus/
+bin/
+out/
+build/
+.mvn/wrapper/maven-wrapper.properties
+
+# --- Web Bundler & Frontend ---
+# Web Bundler manages these; Claude doesn't need the massive generated bundles
+src/main/resources/web/public/
+node_modules/
+.sass-cache/
+.parcel-cache/
+
+# --- Database & Environment ---
+*.log
+.env
+docker/volumes/
+
+# --- IDEs ---
+.idea/
+.vscode/
+*.iml
+
+# --- Large Lock Files (Token Wasters) ---
+package-lock.json
+pnpm-lock.yaml
+mvnw.cmd
